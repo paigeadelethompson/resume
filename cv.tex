@@ -1,0 +1,88 @@
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+%\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=.8cm, top=.8cm, right=.8cm, bottom=1.0cm, footskip=.4cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\colorlet{awesome}{awesome-concrete}
+
+% Uncomment if you would like to specify your own color
+
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+
+\name{Paige}{Thompson}
+\position{Systems Engineer/Software Developer}
+\address{Greater Seattle Area}
+
+\email{paigeadele@gmail.com}
+\mobile{(+1) 206-946-2468}
+\homepage{paigeadelethompson.github.io/paigeadelethompson}
+
+\quote{``At my core I am a systems administrator and software engineer. 
+Starting in the year 2000, I grew up immersed in the Seattle tech and startup scene around other 
+professional systems administrators, software engineers, and security researchers. 
+I share the same undying passion for better software and technology with many of 
+my professional colleagues and friends. I have sought to establish a strong, security-minded 
+skill set throughout my career as well as a vital appreciation for productive technology 
+that must sometimes interface with the non-technical world."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\url{}}
+  {Paige Adele Thompson~~~·~~~}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{cv/skills.tex}
+\input{cv/experience.tex}
+\input{cv/presentations.tex}
+\input{cv/certifications.tex}
+\input{cv/education.tex}
+\input{cv/projects.tex}
+%-------------------------------------------------------------------------------
+\end{document}
