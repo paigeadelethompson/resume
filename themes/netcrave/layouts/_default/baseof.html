@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
-        <title>Resume for Paige Adele Thompson / + 1-206-946-2468 / paige@paige.bio</title>
+        <title>Resume for Paige Adele Thompson / +1-206-946-2468 / paige@paige.bio / https://paige.bio</title>
         <meta name="viewport" content="width=device-width,minimum-scale=1">
         <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
         {{ hugo.Generator }}
@@ -20,10 +20,6 @@
         {{ partial "site-style.html" . }}
         {{ partial "site-scripts.html" . }}
         
-        {{ block "favicon" . }}
-        {{ partialCached "site-favicon.html" . }}
-        {{ end }}
-
         {{ if .OutputFormats.Get "RSS" }}
         {{ with .OutputFormats.Get "RSS" }}
         <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
@@ -35,49 +31,46 @@
         {{- template "_internal/opengraph.html" . -}}
         {{- template "_internal/schema.html" . -}}
         {{- template "_internal/twitter_cards.html" . -}}
-
         {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
         {{ template "_internal/google_analytics.html" . }}
         {{ end }}
 	      {{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}
     </head>
-
     <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
-
-
         <main class="pb7" role="main">
             {{ block "main" . }}{{ end }}
             <div class="body">
                 <div class="name-outer">
-                    <span class="first-name">Paige</span>
-                    <span class="middle-name">A.</span>
-                    <span class="last-name">Thompson</span>
+                    <author>
+                        <span class="first-name">Paige</span>
+                        <span class="middle-name">A.</span>
+                        <span class="last-name">Thompson</span>
+                    </author>
                 </div>
                 <div class="title-outer">
                     <span class="title">Systems Engineer / Software Developer</span>
                 </div>
                 <div class="location-outer">
-                    <span class="location">Seattle, Washington</span>
+                    <address><span class="location">Seattle, Washington</span></address>
                 </div>
                 <div class="social-outer">
                     <ul>
-                        <li><a href="" class="social-icon"><i class="fa-brands fa-linkedin"></i><span class="linkedin">IAmPaigeAT</span></a></li>
-                        <li><a href="" class="social-icon"><i class="fa-brands fa-github"></i><span class="github">paigeadelethompson</span></a></li>
-                        <li><a href="" class="social-icon"><i class="fa-brands fa-key"></i><span class="keybase">IAmPaigeAT</span></a></li>
-                        <li><a href="" class="social-icon"><i class="fa-solid fa-phone"></i><span class="phone">+1-206-946-2468</span></a></li>
-                        <li><a href="" class="social-icon"><i class="fa-solid fa-envelope"></i><span class="email">paige@paige.bio</span></a></li>
-                        <li><a href="" class="social-icon"><i class="fa-solid fa-globe"></i><span class="keybase">https://paige.bio</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/iampaigeat/" class="social-icon"><i class="fa-brands fa-linkedin"></i><span class="linkedin">IAmPaigeAT</span></a></li>
+                        <li><a href="https://github.com/paigeadelethompson" class="social-icon"><i class="fa-brands fa-github"></i><span class="github">paigeadelethompson</span></a></li>
+                        <li><a href="https://keybase.io/iampaigeat" class="social-icon"><i class="fa-brands fa-key"></i><span class="keybase">IAmPaigeAT</span></a></li>
+                        <li><a href="tel:+12069462468" class="social-icon"><i class="fa-solid fa-phone"></i><span class="phone">+1-206-946-2468</span></a></li>
+                        <li><a href="mailto:paige@paige.bio" class="social-icon"><i class="fa-solid fa-envelope"></i><span class="email">paige@paige.bio</span></a></li>
+                        <li><a href="https://paige.bio" class="social-icon"><i class="fa-solid fa-globe"></i><span class="keybase">https://paige.bio</span></a></li>
                     </ul>
                 </div>
                 <div class="quote">
-                    <p>
-                    At my core I am a systems administrator and software engineer. 
+                    <q>At my core I am a systems administrator and software engineer. 
                     Starting in the year 2000, I grew up immersed in the Seattle tech and startup scene around other 
                     professional systems administrators, software engineers, and security researchers. 
                     I share the same undying passion for better software and technology with many of 
                     my professional colleagues and friends. I have sought to establish a strong, security-minded 
                     skill set throughout my career as well as a vital appreciation for productive technology 
-                    that must interface with the non-technical world.</p>
+                    that must interface with the non-technical world.</q>
                 </div>
                 <div class="heading">
                     <h1>Expertise</h1>
@@ -263,8 +256,7 @@
                                     <li>Developed a data migration platform in C#, LINQ, MSSQL, LINQ-to-SQL, WCF, and WPF for the purpose of moving data from an older SQL 2000 database to a newer ORM-based database and production environment.</li>
                                 </ul>
                             </div>
-                        </div>
-                        
+                        </div>                        
                         <div class="job-row">
                             <div class="job-company">
                                 Zion Prepatory Academy
@@ -286,7 +278,6 @@
                                 </ul>
                             </div>
                         </div>
-                        
                         <div class="job-row-last">
                             <div class="job-company">
                                 Seattle Software Systems Inc.
@@ -415,6 +406,5 @@
                 </div>
             </div>
         </main>
-
     </body>
 </html>
