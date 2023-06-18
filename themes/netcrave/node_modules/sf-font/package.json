@@ -1,0 +1,8 @@
+{
+  "name": "sf-font",
+  "version": "1.0.0",
+  "description": "The SF Pro font, right from NPM",
+  "main": "stylesheet.css",
+  "author": "Arthur Guiot",
+  "license": "MIT"
+}
