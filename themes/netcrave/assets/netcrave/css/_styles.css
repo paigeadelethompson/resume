@@ -53,7 +53,25 @@ span {
     margin: 2px;
 }
 
+body {
+     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        min-width: 360px;
+    }
+
+    @media print {
+        min-width: unset;
+    }
+}
+
 .body {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        min-width: unset;
+        max-width: unset;
+        width: unset;
+        padding: unset;
+        height: unset;
+    }
+
     min-width: 210mm;
     height: 280mm;
     overflow: hidden;
@@ -61,6 +79,16 @@ span {
     padding-right: 2cm;
     padding-top: 1cm;
     width: unset;
+
+    @media print {
+        min-width: 210mm;
+        height: 280mm;
+        overflow: hidden;
+        padding-left: 2cm;
+        padding-right: 2cm;
+        padding-top: 1cm;
+        width: unset;
+    }
 }
 
 .body-continued {
@@ -68,6 +96,14 @@ span {
 }
 
 .name-outer {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        font-size: 24pt;
+    }
+
+    @media print {
+        font-size: 42pt;
+    }
+
     font-size: 42pt;
     display: flex;
     align-items: center;
@@ -130,6 +166,13 @@ span {
 }
 
 .social-outer {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        width: auto;
+    }
+
+    @media print {
+        width: 100%;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,6 +180,16 @@ span {
 }
 
 .social-outer ul {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        width: auto;
+        margin-left: 15%;
+    }
+
+    @media print {
+        width: unset;
+        margin-left: unset;
+
+    }
     list-style-type: none;
 }
 
@@ -197,6 +250,15 @@ h1::first-letter {
 }
 
 .expertise-row {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        margin-left: 0;
+        width: 98%;
+    }
+
+    @media print {
+        width: 90%;
+        margin-left: 5%;
+    }
     margin-left: 5%;
     width:90%;
     margin-right: 5%;
@@ -219,6 +281,14 @@ h1::first-letter {
 }
 
 .expertise-skills {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        text-align: right;
+    }
+
+    @media print {
+        text-align: unset;
+    }
+
     letter-spacing: 0.06em;
     color: black;
     font-size: 10pt;
@@ -229,6 +299,14 @@ h1::first-letter {
 }
 
 .expertise-skills-last {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        text-align: right;
+    }
+
+    @media print {
+        text-align: unset;
+    }
+
     letter-spacing: 0.07em;
     color: black;
     font-size: 10pt;
