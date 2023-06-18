@@ -73,7 +73,6 @@ body {
     }
 
     min-width: 210mm;
-    height: 280mm;
     overflow: hidden;
     padding-left: 2cm;
     padding-right: 2cm;
@@ -93,6 +92,14 @@ body {
 
 .body-continued {
     padding-top: 0;
+}
+
+.body-continued h1 {
+    display: none;
+
+    @media print {
+        display: unset;
+    }
 }
 
 .name-outer {
@@ -173,6 +180,7 @@ body {
     @media print {
         width: 100%;
     }
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,8 +189,7 @@ body {
 
 .social-outer ul {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        width: auto;
-        margin-left: 15%;
+        width: 35%;
     }
 
     @media print {
@@ -190,11 +197,19 @@ body {
         margin-left: unset;
 
     }
+
     list-style-type: none;
 }
 
 .social-outer ul li {
     float: left;
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        width: 142px;
+    }
+
+    @media print {
+        width: unset;
+    }
 }
 
 .social-icon i {
@@ -282,11 +297,13 @@ h1::first-letter {
 
 .expertise-skills {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        width: 70%;
         text-align: right;
     }
 
     @media print {
         text-align: unset;
+        width: 100%;
     }
 
     letter-spacing: 0.06em;
@@ -381,6 +398,14 @@ h1::first-letter {
     margin-right: 5%;
     display: flex;
     width: 90%;
+
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        width: 95%;
+    }
+
+    @media print {
+        width: 98%;
+    }
 }
 
 .job-duties ul li {
