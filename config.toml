@@ -7,3 +7,6 @@ theme = 'netcrave'
   [[Module.mounts]]
     source = "static/img"
     target = "static/img"
+  [[Module.mounts]]
+    source = "static/dl"
+    target = "static/dl"
