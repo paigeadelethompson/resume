@@ -92,9 +92,13 @@ body {
 
 .body-continued {
     padding-top: 0;
+    border: 0;
+    @media {
+        border: unset;
+    }
 }
 
-.body-continued h1 {
+.h1-continued {
     display: none;
 
     @media print {
