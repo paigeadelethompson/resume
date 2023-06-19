@@ -1,4 +1,5 @@
 +++
+cover = "/img/cover.png"
 title = "Resume for Paige Adele Thompson / +1-206-946-2468 / paige@paige.bio / https://paige.bio"
 first_name = "Paige"
 middle_name = "A."
