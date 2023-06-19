@@ -42,6 +42,10 @@ a {
 }
 
 div {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
     margin: 0px;
     //margin: 1px;
     //border: 1px solid black;
@@ -63,13 +67,12 @@ body {
     }
 }
 
-.body {
+main {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         min-width: unset;
         max-width: unset;
         width: unset;
         padding: unset;
-        height: unset;
     }
 
     min-width: 210mm;
@@ -77,20 +80,18 @@ body {
     padding-left: 2cm;
     padding-right: 2cm;
     padding-top: 1cm;
-    width: unset;
 
-    @media print {
-        min-width: 210mm;
-        height: 280mm;
-        overflow: hidden;
-        padding-left: 2cm;
-        padding-right: 2cm;
-        padding-top: 1cm;
-        width: unset;
-    }
+}
+
+.body {
+
 }
 
 .body-continued {
+    page-break-before: always;
+}
+
+.heading-continued {
     padding-top: 0;
     border: 0;
     @media {
@@ -98,7 +99,7 @@ body {
     }
 }
 
-.h1-continued {
+.heading-continued h1 {
     display: none;
 
     @media print {
@@ -237,11 +238,13 @@ body {
     align-items: center;
     justify-content: center;
     width: auto;
+    padding-top: 1px;
+    
 }
 
 .quote q {
     text-align: center;
-    width: 90%;
+    width: 100%;
     letter-spacing: 0.03em;
     font-size: 10pt;
     font-weight: normal;
@@ -285,18 +288,34 @@ h1::first-letter {
 }
 
 .expertise-category {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        width: 128px;
+    }
+
+    @media print {
+        width: 200px;
+    }
+
     font-weight: bold;
     font-size: 12pt;
     float: left;
-    width:128px;
+    width:200px;
     border-bottom: 1px solid rgba(242, 242, 242, 0.50);
 }
 
 .expertise-category-last {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        width: 128px;
+    }
+
+    @media print {
+        width: 200px;
+    }
+
     font-weight: bold;
     font-size: 12pt;
     float: left;
-    width:128px;
+    width:200px;
 }
 
 .expertise-skills {
@@ -340,6 +359,7 @@ h1::first-letter {
 }
 
 .job-row {
+    margin-bottom: 4px;
     width: auto;
     border-bottom: 1px solid rgba(242, 242, 242, 0.50);
 }
@@ -398,8 +418,7 @@ h1::first-letter {
 
 
 .job-duties {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
     display: flex;
     width: 90%;
 
@@ -408,7 +427,7 @@ h1::first-letter {
     }
 
     @media print {
-        width: 98%;
+        width: 90%;
     }
 }
 
@@ -417,6 +436,7 @@ h1::first-letter {
     color: black;
     font-size: 10pt;
     font-weight: normal;
+    margin-top: 1px;
 }
 
 .job-duties ul li::first-letter {

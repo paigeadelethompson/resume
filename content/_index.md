@@ -74,11 +74,11 @@ interface with the non-technical world.
     '''
 
     [[page.history]]
-    company_name = "Amazon Web Services Inc. (Simple Storage Services)"
+    company_name = "Amazon Web Services Inc."
     start_date = "May 2015"
     end_date = "September 2016"
     location = "Seattle, Washington"
-    job_title = "Systems Engineer Level 4 - Border Reliability Services"
+    job_title = "Systems Engineer Level 4 - S3 Border Reliability"
     duties = [
     '''
     Planned, scheduled, and configured new hardware in Amazon’s datacenters
@@ -207,7 +207,7 @@ interface with the non-technical world.
 
     [[page.history]]
     remove_border = true
-    company_name = "Seattle Software Systems Inc."
+    company_name = "SeattleSoft Inc."
     location = "Seattle, Washington"
     job_title = "Software Engineer / Systems Administrator"
     start_date = "October 2005"
@@ -262,6 +262,38 @@ interface with the non-technical world.
     Left prior to completing my degree to focus on work at Seattle Software
     Systems which included projects for Wintech Racing and the ConnectU
     platform.
+    ''']
+
+    [[page.activities]]
+    remove_border = true
+    name = "Netcrave Communications"
+    title = "Sole Proprietor"
+    location = "Virtual"
+    start_date = "2000"
+    end_date = "2019"
+    details = [
+    '''
+    Offered DNS, e-mail, website, shell acounts, and game server hosting as well
+    as static IPv4 and IPv6 tunnels.
+    ''',
+
+    '''
+    VPN, active network monitoring, and denial of service protection services.
+    ''',
+
+    '''
+    Developed several MVC web application development frameworks for Netcrave's
+    specific projects and those of it's clients.
+    ''',
+
+    '''
+    Performed packet capture analyses and filed a number abuse reports with ISPs
+    for confirmed denial of service attacks.
+    ''',
+
+    '''
+    Participated in independent security research to better understand the
+    nature of security problems on the modern internet.
     ''']
 
 +++

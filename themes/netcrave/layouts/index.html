@@ -1,55 +1,270 @@
-{{ define "main" }}
- <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
-    {{ .Content }}
-  </article>
-  {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
-  {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
-  {{/* Create a variable with that section to use in multiple places. */}}
-  {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
-  {{/* Check to see if the section is defined for ranging through it */}}
-  {{ $section_count := len $section }}
-  {{ if ge $section_count 1 }}
-    {{/* Derive the section name  */}}
-    {{ $section_name := index (.Site.Params.mainSections) 0 }}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
-      {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
-       {{ with .Site.GetPage "section" $section_name }}
-          <h1 class="flex-none">
-            {{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}
-          </h1>
+        <title>{{with .Params.title}}{{ . }}{{ end }}</title>
+
+        <meta name="viewport" content="width=device-width,minimum-scale=1">
+        <meta name="description" content="{{with .Params.quote }}{{ . }} {{ end }}">
+
+        {{ hugo.Generator }}
+
+        <meta name="robots" content="index, follow">
+
+        {{ if .OutputFormats.Get "RSS" }}
+        {{ with .OutputFormats.Get "RSS" }}
+
+        <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+        <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+
+        {{ end }}
         {{ end }}
 
-      {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
-
-      <section class="w-100 mw8">
-        {{/* Range through the first $n_posts items of the section */}}
-        {{ range (first $n_posts $section) }}
-          <div class="relative w-100 mb4">
-            {{ .Render "summary-with-image" }}
-          </div>
-        {{ end }}
-      </section>
-
-      {{ if ge $section_count (add $n_posts 1) }}
-      <section class="w-100">
-        <h1 class="f3">{{ i18n "more" }}</h1>
-        {{/* Now, range through the next four after the initial $n_posts items. Nest the requirements, "after" then "first" on the outside */}}
-        {{ range (first 4 (after $n_posts $section))  }}
-          <h2 class="f5 fw4 mb4 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "ml3" "mr3" }}">
-            <a href="{{ .RelPermalink }}" class="link black dim">
-              {{ .Title }}
-            </a>
-          </h2>
+        {{ with partialCached "partials/func/style/GetMainCSS" "style/GetMainCSS" }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" >
         {{ end }}
 
-        {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
-        {{ with .Site.GetPage "section" $section_name }}
-          <a href="{{ .RelPermalink }}" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">{{ i18n "allTitle" . }}</a>
+        {{ range site.Params.custom_css }}
+        {{ with partialCached "partials/func/style/GetResource" . . }}{{ else }}
+        <link rel="stylesheet" href="{{ relURL (.) }}">
         {{ end }}
-        </section>
-      {{ end }}
+        {{ end }}
 
-      </div>
-  {{ end }}
-{{ end }}
+        <link rel="stylesheet" href="/sf-font/stylesheet.css">
+
+        {{- template "_internal/opengraph.html" . -}}
+        {{- template "_internal/schema.html" . -}}
+        {{- template "_internal/twitter_cards.html" . -}}
+        {{ template "_internal/google_analytics.html" . }}
+
+    </head>
+    <body>
+        <main>
+            <div class="name-outer">
+                <author>
+                    <span class="first-name">{{ .Params.first_name }}</span>
+                    <span class="middle-name">{{ .Params.middle_name }}</span>
+                    <span class="last-name">{{ .Params.last_name }}</span>
+                </author>
+            </div>
+            <div class="title-outer">
+                <span class="title">{{ .Params.job_title }}</span>
+            </div>
+            <div class="location-outer">
+                <address><span class="location">{{ .Params.location }}</span></address>
+            </div>
+            <div class="social-outer">
+                <ul>
+                    {{ with .Params.linkedin }}
+                    <li><a href="https://www.linkedin.com/in/{{ . }}" class="social-icon"><i class="fa-brands fa-linkedin"></i><span class="linkedin">IAmPaigeAT</span></a></li>
+                    {{ end }}
+                    {{ with .Params.linkedin }}
+                    <li><a href="https://github.com/{{ . }}" class="social-icon"><i class="fa-brands fa-github"></i><span class="github">paigeadelethompson</span></a></li>
+                    {{ end }}
+                    {{ with .Params.keybase }}
+                    <li><a href="https://keybase.io/{{ . }}" class="social-icon"><i class="fa-brands fa-key"></i><span class="keybase">IAmPaigeAT</span></a></li>
+                    {{ end }}
+                    {{ with .Params.telephone }}
+                    <li><a href="tel:{{ . }}" class="social-icon"><i class="fa-solid fa-phone"></i><span class="phone">+1-206-946-2468</span></a></li>
+                    {{ end }}
+                    {{ with .Params.email }}
+                    <li><a href="mailto:{{ . }}" class="social-icon"><i class="fa-solid fa-envelope"></i><span class="email">paige@paige.bio</span></a></li>
+                    {{ end }}
+                    <li><a href="https://paige.bio" class="social-icon"><i class="fa-solid fa-globe"></i><span class="keybase">https://paige.bio</span></a></li>
+                </ul>
+            </div>
+            {{ with .Params.quote  }}
+            <div class="quote">
+                <q>{{ . }}</q>
+            </div>
+            {{ end }}
+            {{ $continued := false }}
+            {{ with .Params.page }}
+            {{ range . }}
+            <div class="body {{ if $continued }} body-continued {{ end }}">
+                {{ with .expertise }}
+                <div class="heading">
+                    <h1>Expertise</h1>
+                    <div class="expertise-outer">
+                        {{ range . }}
+                        <div class="expertise-row">
+                            <div class="{{ if .remove_border }} expertise-category-last{{ else }}expertise-category{{ end }}">
+                                {{ .category }}
+                            </div>
+                            <div class="{{ if .remove_border }} expertise-skills-last{{ else }}expertise-skills{{ end }}">
+                                {{ .skills }}
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+                {{ with .history }}
+                <div class=" {{ if $continued }} heading-continued {{ end }}">
+                    <h1 class="heading">
+                        {{ if $continued }}History (continued){{else}}History{{ end }}
+                    </h1>
+                    <div class="job-outer">
+                        {{range . }}
+                        <div class="{{ if .remove_border }} job-row-last{{ else }}job-row{{ end }}">
+                            <div class="job-company">
+                                {{ .company_name }}
+                            </div>
+                            <div class="location job-location">
+                                {{ .location }}
+                            </div>
+                            <div class="job-title">
+                                {{ .job_title }}
+                            </div>
+                            <div class="job-date-outer">
+                                <time>{{ .start_date }}</time> - <time>{{ .end_date }}</time>
+                            </div>
+                            <div class="job-duties">
+                                <ul>
+                                    {{ range .duties }}
+                                    <li> {{ . }} </li>
+                                    {{ end }}
+                                </ul>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+                {{ $continued = true }}
+                {{ with .certifications }}
+                <div class="heading">
+                    <h1>
+                        Certifications
+                    </h1>
+                    <div class="job-outer">
+                        {{range . }}
+                        <div class="{{ if .remove_border }} job-row-last{{ else }}job-row{{ end }}">
+                            <div class="job-company">
+                                {{ .certification_name }}
+                            </div>
+                            <div class="location job-location">
+                                {{ .location }}
+                            </div>
+                            <div class="job-title">
+                                {{ .title }}
+                            </div>
+                            <div class="job-date-outer">
+                                <time>{{ .start_date }}</time> - <time>{{ .end_date }}</time>
+                            </div>
+                            <div class="job-duties">
+                                <ul>
+                                    {{ range .details }}
+                                    <li> {{ . }} </li>
+                                    {{ end }}
+                                </ul>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+                {{ with .presentations }}
+                <div class="heading">
+                    <h1>
+                        Presentations
+                    </h1>
+                    <div class="job-outer">
+                        {{range . }}
+                        <div class="{{ if .remove_border }} job-row-last{{ else }}job-row{{ end }}">
+                            <div class="job-company">
+                                {{ .presentation_name }}
+                            </div>
+                            <div class="location job-location">
+                                {{ .location }}
+                            </div>
+                            <div class="job-title">
+                                {{ .title }}
+                            </div>
+                            <div class="job-date-outer">
+                                <time>{{ .start_date }}</time> - <time>{{ .end_date }}</time>
+                            </div>
+                            <div class="job-duties">
+                                <ul>
+                                    {{ range .details }}
+                                    <li> {{ . }} </li>
+                                    {{ end }}
+                                </ul>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+                {{ with .education }}
+                <div class="heading">
+                    <h1>
+                        Education
+                    </h1>
+                    <div class="job-outer">
+                        {{range . }}
+                        <div class="{{ if .remove_border }} job-row-last{{ else }}job-row{{ end }}">
+                            <div class="job-company">
+                                {{ .institution }}
+                            </div>
+                            <div class="location job-location">
+                                {{ .location }}
+                            </div>
+                            <div class="job-title">
+                                {{ .degree }}
+                            </div>
+                            <div class="job-date-outer">
+                                <time>{{ .start_date }}</time> - <time>{{ .end_date }}</time>
+                            </div>
+                            <div class="job-duties">
+                                <ul>
+                                    {{ range .details }}
+                                    <li> {{ . }} </li>
+                                    {{ end }}
+                                </ul>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+                {{ with .activities }}
+                <div class="heading">
+                    <h1>
+                        Activities
+                    </h1>
+                    <div class="job-outer">
+                        {{range . }}
+                        <div class="{{ if .remove_border }} job-row-last{{ else }}job-row{{ end }}">
+                            <div class="job-company">
+                                {{ .name }}
+                            </div>
+                            <div class="location job-location">
+                                {{ .location }}
+                            </div>
+                            <div class="job-title">
+                                {{ .title }}
+                            </div>
+                            <div class="job-date-outer">
+                                <time>{{ .start_date }}</time> - <time>{{ .end_date }}</time>
+                            </div>
+                            <div class="job-duties">
+                                <ul>
+                                    {{ range .details }}
+                                    <li> {{ . }} </li>
+                                    {{ end }}
+                                </ul>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+            {{ end }}
+        </main>
+    </body>
+</html>
