@@ -13,6 +13,9 @@ The contents of your resume should be put in `content/_index.md` with respect to
 
 - A [Quickstart](https://docs.github.com/en/pages/quickstart) : https://docs.github.com/en/pages/quickstart
 
+## PDF 
+- Print to PDF works sufficiently 
+<img src="https://github.com/paigeadelethompson/resume/blob/main/screenshot/sc4.png?raw=true" width=640  />
 
 ## Demo 
 - https://cv.paige.bio
