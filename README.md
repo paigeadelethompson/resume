@@ -1,4 +1,4 @@
-# Paige's Resume
+# Paige's Resume Format
 A format based loosely on Awesome-CV created with Hugo. 
 - Mobile / Desktop viewing formats
 - Printer-friendly font selection; Apple SF Pro Display
@@ -12,3 +12,7 @@ The contents of your resume should be put in `content/_index.md` with respect to
 ## Setup Github Pages 
 
 - A [Quickstart](https://docs.github.com/en/pages/quickstart) : https://docs.github.com/en/pages/quickstart
+
+
+## Demo 
+- https://cv.paige.bio
