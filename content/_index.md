@@ -228,7 +228,7 @@ interface with the non-technical world.
 
     [[page.certifications]]
     remove_border = true
-    certification_name = "Hurricane Electric IPv6 Certification"
+    certification_name = "Hurricane Electric IPv6"
     title = "Sage Level"
     start_date = "2022"
     end_date = "2022"
