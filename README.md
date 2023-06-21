@@ -1,5 +1,5 @@
 # Paige's Resume
-![image info](https://github.com/paigeadelethompson/resume/blob/main/screenshot/sc1.png?raw=true){width=64 height=64}
+![image info](https://github.com/paigeadelethompson/resume/blob/main/screenshot/sc1.png?raw=true | width=100)
 ![image info](https://github.com/paigeadelethompson/resume/blob/main/screenshot/sc2.PNG?raw=true)
 ![image info](https://github.com/paigeadelethompson/resume/blob/main/screenshot/sc3.PNG?raw=true)
 # Getting started 
