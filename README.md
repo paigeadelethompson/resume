@@ -14,11 +14,11 @@ The contents of your resume should be put in `content/_index.md` with respect to
 
 - A [Quickstart](https://docs.github.com/en/pages/quickstart) : https://docs.github.com/en/pages/quickstart
 
-## PDF 
+# PDF 
 n- Print to PDF works sufficiently 
 <img src="https://github.com/paigeadelethompson/resume/blob/main/screenshot/sc4.png?raw=true" width=640  />
 
-## Demo 
+# Demo 
 - https://cv.paige.bio
 
 
@@ -27,3 +27,6 @@ n- Print to PDF works sufficiently
 
 ## Print Sample Back 
 <img src="https://github.com/paigeadelethompson/resume/blob/main/print_sample/sample2.jpeg?raw=true" width=640  />
+
+# OCR / Job portal compatibility
+- It seems to work reasonably well even with Workday but feel free to open an issue if you think this can be improved. 
