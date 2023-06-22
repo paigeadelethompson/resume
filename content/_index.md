@@ -94,7 +94,7 @@ interface with the non-technical world.
     '''
     Participated in a 24/7 on-call rotation to address and remediate
     customer impacting events such as outages, software and hardware faults,
-    and denial of service attacks within service level agreements."
+    and denial of service attacks within service level agreements.
     ''']
 
     [[page.history]]
