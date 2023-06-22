@@ -15,7 +15,9 @@ The contents of your resume should be put in `content/_index.md` with respect to
 - A [Quickstart](https://docs.github.com/en/pages/quickstart) : https://docs.github.com/en/pages/quickstart
 
 # PDF 
-n- Print to PDF works sufficiently 
+- Print to PDF works sufficiently 
+- The GitHub workflow uses a script to export the resume as a PDF using Selenium WebDriver and Google Chrome running in headless mode. It can be retrieved for 
+example from: https://cv.paige.bio/dl/cv.pdf
 <img src="https://github.com/paigeadelethompson/resume/blob/main/screenshot/sc4.png?raw=true" width=640  />
 
 # Demo 
