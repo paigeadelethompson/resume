@@ -15,7 +15,7 @@ The contents of your resume should be put in `content/_index.md` with respect to
 - A [Quickstart](https://docs.github.com/en/pages/quickstart) : https://docs.github.com/en/pages/quickstart
 
 ## PDF 
-- Print to PDF works sufficiently 
+n- Print to PDF works sufficiently 
 <img src="https://github.com/paigeadelethompson/resume/blob/main/screenshot/sc4.png?raw=true" width=640  />
 
 ## Demo 
@@ -23,7 +23,7 @@ The contents of your resume should be put in `content/_index.md` with respect to
 
 
 ## Print Sample Front
-<img src="https://github.com/paigeadelethompson/resume/blob/main/print_samples/sample1.png?raw=true" width=640  />
+<img src="https://github.com/paigeadelethompson/resume/blob/main/print_sample/sample1.png?raw=true" width=640  />
 
 ## Print Sample Back 
-<img src="https://github.com/paigeadelethompson/resume/blob/main/print_samples/sample2.png?raw=true" width=640  />
+<img src="https://github.com/paigeadelethompson/resume/blob/main/print_sample/sample2.png?raw=true" width=640  />
