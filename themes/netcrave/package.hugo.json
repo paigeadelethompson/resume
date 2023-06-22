@@ -1,41 +1,34 @@
 {
- "author": "budparr",
+ "author": "IAmPaigeAT",
  "bugs": {
-  "url": "https://github.com/theNewDynamic/gohugo-theme-ananke/issues"
+     "url": "https://github.com/paigeadelethompson/resume/issues"
  },
  "comments": {
   "dependencies": {},
   "devDependencies": {
-   "auto-changelog": "project",
-   "cssnano": "project",
-   "postcss-cli": "project",
-   "postcss-cssnext": "project",
-   "tachyons": "project"
   }
  },
- "dependencies": {},
- "description": "Theme Ananke",
- "devDependencies": {
-  "auto-changelog": "^1.16.1",
-  "cssnano": "^3.10.0",
-  "postcss-cli": "^7.1.0",
-  "postcss-cssnext": "^2.10.0",
-  "tachyons": "^4.9.1"
+ "dependencies": {
+  "@fontsource/inter": "^5.0.3",
+  "font-awesome": "^4.7.0",
+  "sf-font": "^1.0.0"
  },
- "homepage": "https://github.com/theNewDynamic/gohugo-theme-ananke#readme",
+ "description": "Theme Netcrave",
+ "devDependencies": {
+ },
+    "homepage": "https://cv.paige.bio",
  "keywords": [
   "hugo",
   "gohugo"
  ],
  "license": "MIT",
  "main": "index.js",
- "name": "gohugo-theme-ananke",
+ "name": "gohugo-theme-netcrave",
  "repository": {
   "type": "git",
-  "url": "git+https://github.com/theNewDynamic/gohugo-theme-ananke.git"
+     "url": "git@github.com:paigeadelethompson/resume.git"
  },
  "scripts": {
-  "version": "auto-changelog -p --template keepachangelog --commit-limit 0 \u0026\u0026 git add CHANGELOG.md"
  },
- "version": "2.7.0"
+ "version": "1.0.0"
 }

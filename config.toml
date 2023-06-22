@@ -1,7 +1,6 @@
-baseURL = 'https://cv.paige.bio/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'netcrave'
+baseURL = "https://cv.paige.bio/"
+theme = "netcrave"
+googleAnalytics = "G-HRVBZNT4Z1"
 
 [module]
   [[Module.mounts]]
