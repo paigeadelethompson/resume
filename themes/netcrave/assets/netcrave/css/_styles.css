@@ -201,7 +201,6 @@ main {
 .social-outer {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         width: auto;
-        
     }
 
     @media print {
@@ -242,8 +241,7 @@ main {
 .social-icon i {
     font-family: "FontAwesome";
     font-size: 10pt;
-    padding-right: 4px;
-    padding-left: 4px;
+    padding: 4px;
 }
 
 .social-icon span {
@@ -472,7 +470,7 @@ h1::first-letter {
 
 .job-duties ul li::first-letter {
     color: black;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
 
 }
