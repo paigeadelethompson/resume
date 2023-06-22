@@ -14,19 +14,19 @@
 @import "font-awesome/screen-reader";
 
 * {
-    color: black;
     background-color: white;
-    //font-smooth: always;
     -webkit-font-smoothing: auto;
-    letter-spacing: 0.02em;
     text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     border: 0;
-    font-family: 'SF Pro Display';
+    font-family: 'Inter';
+    font-size: 10pt;
+    letter-spacing: 0.03em;
+    color: black;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
@@ -60,7 +60,7 @@ span {
 }
 
 body {
-     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         min-width: 360px;
     }
 
@@ -110,6 +110,13 @@ main {
 }
 
 .name-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.first-name {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         font-size: 24pt;
     }
@@ -119,14 +126,7 @@ main {
     }
 
     font-size: 42pt;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.first-name {
-    font-weight: 200;
+    font-weight: 100;
 }
 
 .first-name::first-letter {
@@ -134,15 +134,33 @@ main {
 }
 
 .middle-name {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        font-size: 24pt;
+    }
+
+    @media print {
+        font-size: 42pt;
+    }
+
+    font-size: 42pt;
     margin-left: 8px;
-    font-weight: 200;
+    font-weight: 100;
 }
 .middle-name::first-letter {
     color: black;
 }
 
 .last-name {
-    font-weight: bold;
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        font-size: 24pt;
+    }
+
+    @media print {
+        font-size: 42pt;
+    }
+
+    font-size: 42pt;
+    font-weight: 700;
 }
 
 .last-name::first-letter {
@@ -159,8 +177,7 @@ main {
 
 .title {
     text-transform: uppercase;
-    letter-spacing: 0.07em;
-    font-size: 12px;
+    font-weight: 400;
     color: black;
 }
 
@@ -172,11 +189,11 @@ main {
 }
 
 .location {
-    letter-spacing: 0.07em;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 9pt;
+    font-weight: 400;
+    font-size: 10pt;
+    letter-spacing: 0.05em;
     color: black;
+    font-style: oblique;
 }
 
 .social-outer {
@@ -221,38 +238,33 @@ main {
 
 .social-icon i {
     font-family: "FontAwesome";
-    font-size: 8pt;
+    font-size: 10pt;
     padding-right: 4px;
     padding-left: 4px;
 }
 
 .social-icon span {
-    letter-spacing: 0.10em;
-    font-size: 9pt;
-    font-weight: 500;
+    font-size: 10pt;
+    font-weight: 400;
     color: black;
 }
 
 .quote {
-    letter-spacing: 0.07em;
     border-top: 1px solid rgba(242, 242, 242, 0.50);
     display: flex;
     align-items: center;
     justify-content: center;
     width: auto;
     padding-top: 1px;
-    
 }
 
 .quote q {
     text-align: center;
     width: 100%;
-    letter-spacing: 0.03em;
     font-size: 10pt;
-    font-weight: normal;
+    font-weight: 300;
     font-style: italic;
     color: black;
-
 }
 
 .heading {
@@ -260,6 +272,7 @@ main {
 }
 
 h1 {
+    font-size: 20pt;
     margin-top: 2px;
     margin-bottom: 2px;
     font-weight: bold;
@@ -298,7 +311,7 @@ h1::first-letter {
         width: 200px;
     }
 
-    font-weight: bold;
+    font-weight: 700;
     font-size: 12pt;
     float: left;
     width:200px;
@@ -314,7 +327,7 @@ h1::first-letter {
         width: 200px;
     }
 
-    font-weight: bold;
+    font-weight: 700;
     font-size: 12pt;
     float: left;
     width:200px;
@@ -331,10 +344,6 @@ h1::first-letter {
         width: 100%;
     }
 
-    letter-spacing: 0.06em;
-    color: black;
-    font-size: 10pt;
-    font-weight: normal;
     width: 100%;
     border-bottom: 1px solid rgba(242, 242, 242, 0.50);
     border-radius: 0;
@@ -349,10 +358,6 @@ h1::first-letter {
         text-align: unset;
     }
 
-    letter-spacing: 0.07em;
-    color: black;
-    font-size: 10pt;
-    font-weight: normal;
     width: 100%;
 }
 
@@ -371,7 +376,7 @@ h1::first-letter {
 }
 
 .job-company {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 12pt;
     width: 60%;
     float:left;
@@ -382,40 +387,34 @@ h1::first-letter {
     text-align: right;
     float:right;
     width:30%;
-    font-size: 9pt;
-    font-weight: 500;
-    font-style: normal;
     text-transform: uppercase;
+    font-style: normal;
 }
 
 .job-title {
-    letter-spacing: 0.07em;
     color: black;
-    font-size: 9pt;
-    font-weight:500;
+    font-size: 10pt;
+    font-weight: 400;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     width: 60%;
     float: left;
 }
 
-.job-date-outer { 
+.job-date-outer {
     float:right;
     width:30%;
     margin-top: -2px;
-    letter-spacing: 0.07em;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 9pt;
     text-align: right;
 }
 
 
 .job-date-outer time {
-    letter-spacing: 0.07em;
     font-style: normal;
     text-transform: uppercase;
-    font-weight: 500;
-    font-size: 9pt;
+    font-size: 10pt;
+    font-weight: 400;
+    letter-spacing: 0.05em;
 }
 
 
@@ -434,17 +433,12 @@ h1::first-letter {
 }
 
 .job-duties ul li {
-    letter-spacing: 0.06em;
     color: black;
-    font-size: 10pt;
-    font-weight: normal;
     margin-top: 1px;
 }
 
 .job-duties ul li::first-letter {
-    letter-spacing: 0.06em;
     color: black;
-    font-size: 10pt;
     font-weight: 500;
     font-style: normal;
 

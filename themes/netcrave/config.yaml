@@ -24,4 +24,5 @@ module:
     target: 'static/font-awesome'
   - source: 'node_modules/sf-font'
     target: 'static/sf-font'
-
+  - source: 'node_modules/@fontsource/inter'
+    target: 'static/inter'
