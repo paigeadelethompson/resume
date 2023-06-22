@@ -38,10 +38,10 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install Dart Sass Embedded
         run: sudo snap install dart-sass-embedded
-      - name: firefox/python
-        run: apt -y update ; apt -y install chromium python3 python3-pip
+      - name: Chromium/python
+        run: sudo apt -y update ; sudo apt -y install chromium python3 python3-pip
       - name: install selenium
-        run: pip3 install selenium
+        run: sudo pip3 install selenium
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -51,7 +51,7 @@ jobs:
         uses: actions/configure-pages@v2
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Start Hugo Server
+      - name: Export resume as PDF
         run: ./create_pdf.sh
       - name: Build with Hugo
         env:
