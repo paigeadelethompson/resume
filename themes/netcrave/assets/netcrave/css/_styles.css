@@ -44,12 +44,6 @@ a {
 }
 
 div {
-    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        margin-left: 2px;
-        margin-right: 2px;
-    }
-    margin: 0px;
-    //margin: 1px;
     //border: 1px solid black;
     width: 100%;
     padding-bottom: 2px;
@@ -86,7 +80,15 @@ main {
 }
 
 .body {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        margin-left: 2px;
+    }
 
+    @media print {
+        width: auto;
+    }
+    margin: 0;
+    width: 100%;
 }
 
 .body-continued {
@@ -199,6 +201,7 @@ main {
 .social-outer {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         width: auto;
+        
     }
 
     @media print {
@@ -254,11 +257,24 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
+    width: 100%;
+
+    @media print {
+        width: auto;
+    }
+
     padding-top: 1px;
 }
 
 .quote q {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        padding: 16px;
+    }
+
+    @media print {
+        width: unset;
+    }
+
     text-align: center;
     width: 100%;
     font-size: 10pt;
@@ -363,6 +379,14 @@ h1::first-letter {
 
 .job-outer {
     width: auto;
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        margin-right: 4px;
+    }
+
+    @media print {
+        width: auto;
+        margin-right: unset;
+    }
 }
 
 .job-row {
@@ -433,6 +457,15 @@ h1::first-letter {
 }
 
 .job-duties ul li {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        margin-left: 8px;
+        margin-top: 16px;
+    }
+
+    @media print {
+        margin-top: 1px;
+        margin-left: unset;
+    }
     color: black;
     margin-top: 1px;
 }
