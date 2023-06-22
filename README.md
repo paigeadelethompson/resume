@@ -1,5 +1,6 @@
 # Paige's Resume Format
 A format based loosely on Awesome-CV created with Hugo. 
+- Runs on Github Pages (deployment workflow is available in the source tree.)
 - Mobile / Desktop viewing formats
 - Printer-friendly font selection; Apple SF Pro Display
 - Prints accurately from both mobile and desktop to standard A4 ( Fits 1-2 pages, probably more if necesarry.)
@@ -19,3 +20,10 @@ The contents of your resume should be put in `content/_index.md` with respect to
 
 ## Demo 
 - https://cv.paige.bio
+
+
+## Print Sample Front
+<img src="https://github.com/paigeadelethompson/resume/blob/main/print_samples/sample1.png?raw=true" width=640  />
+
+## Print Sample Back 
+<img src="https://github.com/paigeadelethompson/resume/blob/main/print_samples/sample2.png?raw=true" width=640  />
