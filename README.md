@@ -2,7 +2,7 @@
 A format based loosely on Awesome-CV created with Hugo. 
 - Runs on Github Pages (deployment workflow is available in the source tree.)
 - Mobile / Desktop viewing formats
-- Printer-friendly font selection; ~~Apple SF Pro Display~~ Inter (free alternative to SF Pro Display) and FontAwesome
+- Printer-friendly font selection; ~~Apple SF Pro Display~~ [Inter](https://fonts.google.com/specimen/Inter) (a free alternative to Apple's SF Pro Display). FontAwesome is also used for social icons. 
 - Prints accurately from both mobile and desktop to standard A4 ( Fits 1-2 pages, probably more if necesarry.)
 - GH Workflow automatically exports a PDF; see [PDF](https://github.com/paigeadelethompson/resume#pdf) section.
   
