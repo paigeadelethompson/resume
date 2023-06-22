@@ -23,7 +23,7 @@ n- Print to PDF works sufficiently
 
 
 ## Print Sample Front
-<img src="https://github.com/paigeadelethompson/resume/blob/main/print_sample/sample1.png?raw=true" width=640  />
+<img src="https://github.com/paigeadelethompson/resume/blob/main/print_sample/sample1.jpeg?raw=true" width=640  />
 
 ## Print Sample Back 
-<img src="https://github.com/paigeadelethompson/resume/blob/main/print_sample/sample2.png?raw=true" width=640  />
+<img src="https://github.com/paigeadelethompson/resume/blob/main/print_sample/sample2.jpeg?raw=true" width=640  />
