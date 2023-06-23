@@ -1,34 +1,35 @@
 {
- "author": "IAmPaigeAT",
- "bugs": {
-     "url": "https://github.com/paigeadelethompson/resume/issues"
- },
- "comments": {
-  "dependencies": {},
-  "devDependencies": {
-  }
- },
- "dependencies": {
-  "@fontsource/inter": "^5.0.3",
-  "font-awesome": "^4.7.0",
-  "sf-font": "^1.0.0"
- },
- "description": "Theme Netcrave",
- "devDependencies": {
- },
-    "homepage": "https://cv.paige.bio",
- "keywords": [
-  "hugo",
-  "gohugo"
- ],
- "license": "MIT",
- "main": "index.js",
- "name": "gohugo-theme-netcrave",
- "repository": {
-  "type": "git",
-     "url": "git@github.com:paigeadelethompson/resume.git"
- },
- "scripts": {
- },
- "version": "1.0.0"
+  "author": "IAmPaigeAT",
+  "bugs": {
+    "url": "https://github.com/paigeadelethompson/resume/issues"
+  },
+  "comments": {
+    "dependencies": {
+      "@fontsource/inter": "project",
+      "@fortawesome/fontawesome-free": "project",
+      "sf-font": "project"
+    },
+    "devDependencies": {}
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.0.3",
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "sf-font": "^1.0.0"
+  },
+  "description": "Theme Netcrave",
+  "devDependencies": {},
+  "homepage": "https://cv.paige.bio",
+  "keywords": [
+    "hugo",
+    "gohugo"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "gohugo-theme-netcrave",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:paigeadelethompson/resume.git"
+  },
+  "scripts": {},
+  "version": "1.0.0"
 }

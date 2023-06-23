@@ -16,12 +16,8 @@ module:
     target: i18n
   - source: archetypes
     target: archetypes
-  - source: 'node_modules/font-awesome/scss'
-    target: 'assets/netcrave/css/font-awesome'
-  - source: 'node_modules/font-awesome/fonts'
-    target: 'static/font-awesome/fonts'
-  - source: 'node_modules/font-awesome/fonts'
-    target: 'static/font-awesome'
+  - source: 'node_modules/@fortawesome/fontawesome-free'
+    target: 'static/fa'
   - source: 'node_modules/sf-font'
     target: 'static/sf-font'
   - source: 'node_modules/@fontsource/inter'

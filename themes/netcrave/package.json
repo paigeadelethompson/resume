@@ -6,14 +6,14 @@
   "comments": {
     "dependencies": {
       "@fontsource/inter": "project",
-      "font-awesome": "project",
+      "@fortawesome/fontawesome-free": "project",
       "sf-font": "project"
     },
     "devDependencies": {}
   },
   "dependencies": {
     "@fontsource/inter": "^5.0.3",
-    "font-awesome": "^4.7.0",
+    "@fortawesome/fontawesome-free": "^6.4.0",
     "sf-font": "^1.0.0"
   },
   "description": "Theme Netcrave",

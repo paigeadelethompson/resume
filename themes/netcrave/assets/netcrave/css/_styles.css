@@ -1,18 +1,3 @@
-
-@import "vars";
-@import "font-awesome/mixins";
-@import "font-awesome/path";
-@import "font-awesome/core";
-@import "font-awesome/larger";
-@import "font-awesome/fixed-width";
-@import "font-awesome/list";
-@import "font-awesome/bordered-pulled";
-@import "font-awesome/animated";
-@import "font-awesome/rotated-flipped";
-@import "font-awesome/stacked";
-@import "font-awesome/icons";
-@import "font-awesome/screen-reader";
-
 * {
     background-color: white;
     -webkit-font-smoothing: auto;
@@ -38,6 +23,29 @@
     cursor: default;
     text-decoration: none;
 }
+
+.toolstrip {
+    position: absolute;
+    @media print {
+        display: none;
+    }
+}
+
+.toolstrip i {
+    font-size: 16pt;
+    margin-right: 8px;
+    color: black;
+    font-weight: normal;
+    cursor: pointer;
+    @media print {
+        display: none;
+    }
+}
+
+.toolstrip a {
+    float: left;
+}
+
 
 a {
     color: black;

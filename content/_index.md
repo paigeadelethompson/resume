@@ -143,6 +143,7 @@ interface with the non-technical world.
     2012.
     ''']
 
+[[page]]
     [[page.history]]
     company_name = "Acronym Media Inc."
     location = "Telecommute"
@@ -154,8 +155,7 @@ interface with the non-technical world.
     Assisted in the development of an SEO (KPI and insights dashboarding)
     analytics platform using PHP Symfony, Highcharts.js, MySQL/Propel.
     ''']
-
-[[page]]
+    
     [[page.history]]
     company_name = "The Branning Group"
     location = "Telecommute"
