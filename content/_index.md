@@ -155,7 +155,6 @@ interface with the non-technical world.
     Assisted in the development of an SEO (KPI and insights dashboarding)
     analytics platform using PHP Symfony, Highcharts.js, MySQL/Propel.
     ''']
-    
     [[page.history]]
     company_name = "The Branning Group"
     location = "Telecommute"
