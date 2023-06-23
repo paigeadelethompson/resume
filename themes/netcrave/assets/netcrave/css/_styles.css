@@ -25,6 +25,12 @@
 }
 
 .toolstrip {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
     position: absolute;
     @media print {
         display: none;
@@ -32,6 +38,7 @@
 }
 
 .toolstrip i {
+   
     font-size: 16pt;
     margin-right: 8px;
     color: black;
@@ -120,6 +127,12 @@ main {
 }
 
 .name-outer {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        margin-top: 24px;
+    }
+    @media print {
+        margin-top: unset;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,16 +222,19 @@ main {
 .social-outer {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         width: auto;
+        min-width: unset;
     }
 
     @media print {
         width: 100%;
+        min-width: unset;
     }
 
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    min-width: 220mm;
 }
 
 .social-outer ul {
@@ -238,7 +254,7 @@ main {
 .social-outer ul li {
     float: left;
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        width: 142px;
+        width: 164px;
     }
 
     @media print {
