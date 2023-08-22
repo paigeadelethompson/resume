@@ -24,6 +24,22 @@
     text-decoration: none;
 }
 
+.date-sep {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        display: none;
+    }
+    display: unset;
+    margin:0;
+}
+
+.date-sep-mobile {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        display: unset;
+    }
+    margin: 0;
+    display: none;
+}
+
 .toolstrip {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         width: 100%;
@@ -226,8 +242,8 @@ main {
     }
 
     @media print {
-        width: 100%;
-        min-width: unset;
+        width: unset;
+        
     }
 
     display: flex;
@@ -254,7 +270,7 @@ main {
 .social-outer ul li {
     float: left;
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        width: 164px;
+        width: 168px;
     }
 
     @media print {
@@ -279,27 +295,16 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    padding-top: 2px;
 
-    @media print {
-        width: auto;
-    }
-
-    padding-top: 1px;
 }
 
 .quote q {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        padding: 16px;
+        width: 90%;
     }
-
-    @media print {
-        width: unset;
-    }
-
+    
     text-align: center;
-    width: 100%;
-    font-size: 10pt;
     font-weight: 300;
     font-style: italic;
     color: black;
@@ -321,22 +326,19 @@ h1::first-letter {
 }
 
 .expertise-outer {
-    width: auto;
+    width: 100%;
 }
 
 .expertise-row {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        margin-left: 0;
         width: 98%;
     }
 
     @media print {
-        width: 90%;
-        margin-left: 5%;
+        width: unset;
     }
-    margin-left: 5%;
-    width:90%;
-    margin-right: 5%;
+    
+    width:100%;
     display: flex;
 }
 
@@ -350,7 +352,6 @@ h1::first-letter {
     }
 
     font-weight: 700;
-    font-size: 12pt;
     float: left;
     width:200px;
     border-bottom: 1px solid rgba(242, 242, 242, 0.50);
@@ -366,36 +367,19 @@ h1::first-letter {
     }
 
     font-weight: 700;
-    font-size: 12pt;
     float: left;
     width:200px;
 }
 
 .expertise-skills {
-    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        width: 70%;
-        text-align: right;
-    }
-
-    @media print {
-        text-align: unset;
-        width: 100%;
-    }
-
     width: 100%;
     border-bottom: 1px solid rgba(242, 242, 242, 0.50);
     border-radius: 0;
+    text-align: right;
 }
 
 .expertise-skills-last {
-    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        text-align: right;
-    }
-
-    @media print {
-        text-align: unset;
-    }
-
+    text-align: right;
     width: 100%;
 }
 
@@ -413,7 +397,7 @@ h1::first-letter {
 
 .job-row {
     margin-bottom: 4px;
-    width: auto;
+    width: 100%;
     border-bottom: 1px solid rgba(242, 242, 242, 0.50);
 }
 
@@ -439,7 +423,6 @@ h1::first-letter {
 
 .job-title {
     color: black;
-    font-size: 10pt;
     font-weight: 400;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -458,38 +441,32 @@ h1::first-letter {
 .job-date-outer time {
     font-style: normal;
     text-transform: uppercase;
-    font-size: 10pt;
     font-weight: 400;
     letter-spacing: 0.05em;
 }
 
 
 .job-duties {
-    margin-left: 3%;
     display: flex;
-    width: 90%;
 
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        margin-left: 8px;
         width: 95%;
+        
     }
 
-    @media print {
-        width: 90%;
+    ul { 
+        margin-top: 4px;
     }
 }
 
 .job-duties ul li {
+    color: black;
+    margin-top: 2px;
+
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         margin-left: 8px;
-        margin-top: 16px;
     }
-
-    @media print {
-        margin-top: 1px;
-        margin-left: unset;
-    }
-    color: black;
-    margin-top: 1px;
 }
 
 .job-duties ul li::first-letter {

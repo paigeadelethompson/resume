@@ -73,11 +73,22 @@ interface with the non-technical world.
     transaction isolation, eventual consistency, OpenID, JWT, SAML, responsible
     disclosure, good faith hacking
     '''
-
+    [[page.history]]
+    company_name = "Upwork"
+    start_date = "Jun 2023"
+    end_date = ""
+    location = "Virtual"
+    job_title = "Freelance Software / Systems Engineer"
+    duties = [
+    '''
+    IAmPaigeAT / https://www.upwork.com/freelancers/~011c709e6eddbc331f?viewMode=1
+    '''
+    ]
+    
     [[page.history]]
     company_name = "Amazon Web Services Inc."
     start_date = "May 2015"
-    end_date = "September 2016"
+    end_date = "Sep 2016"
     location = "Seattle, Washington"
     job_title = "Systems Engineer Level 4 - S3 Border Reliability"
     duties = [
@@ -101,7 +112,7 @@ interface with the non-technical world.
     company_name = "ATG Stores Inc."
     location = "Kirkland, Washington"
     job_title = "Software Engineer - Internal Tools Team"
-    start_date = "January 2014"
+    start_date = "Jan 2014"
     end_date = "May 2014"
     duties = [
     '''
@@ -123,7 +134,7 @@ interface with the non-technical world.
     location = " Woodinville, Washington"
     job_title = " Lead DevOps Engineer / Software Engineer"
     start_date = "May 2012"
-    end_date = "June 2013"
+    end_date = "Jun 2013"
     duties = [
     '''
     Built server deployment and configuration automation with Opscode Chef on
@@ -148,8 +159,8 @@ interface with the non-technical world.
     company_name = "Acronym Media Inc."
     location = "Telecommute"
     job_title = "Software Engineer"
-    start_date = "January 2011"
-    end_date = "June 2013"
+    start_date = "Jan 2011"
+    end_date = "Jun 2013"
     duties = [
     '''
     Assisted in the development of an SEO (KPI and insights dashboarding)
@@ -159,8 +170,8 @@ interface with the non-technical world.
     company_name = "The Branning Group"
     location = "Telecommute"
     job_title = "Software Engineer - Part-Time"
-    start_date = "January 2010"
-    end_date = "January 2011"
+    start_date = "Jan 2010"
+    end_date = "Jan 2011"
     duties = [
     '''
     Developed on Wordpress, drupal, Joomla, and custom PHP/MySQL/Javascript
@@ -171,8 +182,8 @@ interface with the non-technical world.
     company_name = "Onvia Inc. "
     location = "Seattle, Washington"
     job_title = "Software Engineer"
-    start_date = "November 2008"
-    end_date = "March 2009"
+    start_date = "Nov 2008"
+    end_date = "Mar 2009"
     duties = [
     '''
     Developed a data migration platform in C#, LINQ, MSSQL, LINQ-to-SQL, WCF,
@@ -184,8 +195,8 @@ interface with the non-technical world.
     company_name = "Zion Prepatory Academy"
     location = "Seattle, Washington"
     job_title = "IT Manager - Part-time"
-    start_date = "December 2007"
-    end_date = "March 2010"
+    start_date = "Dec 2007"
+    end_date = "Mar 2010"
     duties = [
     '''
     Managed Active Directory, Exchange Server 2007, Google Apps for Education /
@@ -210,8 +221,8 @@ interface with the non-technical world.
     company_name = "SeattleSoft Inc."
     location = "Seattle, Washington"
     job_title = "Software Engineer / Systems Administrator"
-    start_date = "October 2005"
-    end_date = "March 2007"
+    start_date = "Oct 2005"
+    end_date = "Mar 2007"
     duties = [
     '''
     Developed an inventory management front-end application for PalmOS 4.x in
