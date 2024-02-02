@@ -216,14 +216,7 @@ main {
 }
 
 .title {
-    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        font-size: 10pt;
-    }
-
-    @media print {
-        font-size: 12pt;
-    }
-
+    font-size: 10pt;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 0.04em;
@@ -441,6 +434,7 @@ h1::first-letter {
 }
 
 .job-location {
+    font-size: 10pt;
     color: black;
     text-align: right;
     float:right;
@@ -456,6 +450,7 @@ h1::first-letter {
     text-transform: uppercase;
     width: 60%;
     float: left;
+    font-size: 10pt;
 }
 
 .job-date-outer {
@@ -467,6 +462,7 @@ h1::first-letter {
 
 
 .job-date-outer time {
+    font-size: 10pt;
     font-style: normal;
     text-transform: uppercase;
     font-weight: 400;
