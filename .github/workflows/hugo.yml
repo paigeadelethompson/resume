@@ -39,7 +39,7 @@ jobs:
       - name: Install Dart Sass Embedded
         run: sudo snap install dart-sass-embedded
       - name: Chromium/Python
-        run: sudo apt -y update ; sudo apt -y install chromium-browser python3 python3-pip
+        run: sudo apt -y update ; sudo apt -y install chromium-browser python3 python3-pip python-docx
       - name: install Selenium
         run: sudo pip3 install selenium
       - name: Checkout
@@ -53,6 +53,8 @@ jobs:
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Export resume as PDF
         run: ./create_pdf.sh
+      - name: Export resume as DOCX
+        run: python resume_docx.py
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules

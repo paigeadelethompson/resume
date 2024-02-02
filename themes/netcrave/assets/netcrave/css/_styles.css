@@ -7,8 +7,8 @@
     -webkit-text-size-adjust: 100%;
     border: 0;
     font-family: 'Inter';
-    font-size: 10pt;
-    letter-spacing: 0.03em;
+    font-size: 12pt;
+    letter-spacing: 0.01em;
     color: black;
     font-style: normal;
     font-weight: 300;
@@ -51,15 +51,16 @@
     @media print {
         display: none;
     }
+    
 }
 
 .toolstrip i {
-   
+    font-weight: 0;
     font-size: 16pt;
     margin-right: 8px;
     color: black;
-    font-weight: normal;
     cursor: pointer;
+
     @media print {
         display: none;
     }
@@ -161,10 +162,10 @@ main {
     }
 
     @media print {
-        font-size: 42pt;
+        font-size: 32pt;
     }
 
-    font-size: 42pt;
+    font-size: 32pt;
     font-weight: 100;
 }
 
@@ -178,10 +179,10 @@ main {
     }
 
     @media print {
-        font-size: 42pt;
+        font-size: 32pt;
     }
 
-    font-size: 42pt;
+    font-size: 32pt;
     margin-left: 8px;
     font-weight: 100;
 }
@@ -195,10 +196,10 @@ main {
     }
 
     @media print {
-        font-size: 42pt;
+        font-size: 32pt;
     }
 
-    font-size: 42pt;
+    font-size: 32pt;
     font-weight: 700;
 }
 
@@ -215,8 +216,17 @@ main {
 }
 
 .title {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        font-size: 10pt;
+    }
+
+    @media print {
+        font-size: 12pt;
+    }
+
     text-transform: uppercase;
     font-weight: 400;
+    letter-spacing: 0.04em;
     color: black;
 }
 
@@ -229,21 +239,28 @@ main {
 
 .location {
     font-weight: 400;
-    font-size: 10pt;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     color: black;
+}
+
+.residence {
+    letter-spacing: 0.16em;
     font-style: oblique;
+    font-size: 10pt;
 }
 
 .social-outer {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         width: auto;
         min-width: unset;
+        margin-top: 4px;
+        margin-bottom: 4px;
     }
 
     @media print {
         width: unset;
-        
+        margin-top: unset;
+        margin-bottom: unset;
     }
 
     display: flex;
@@ -254,10 +271,7 @@ main {
 }
 
 .social-outer ul {
-    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        width: 35%;
-    }
-
+   
     @media print {
         width: unset;
         margin-left: unset;
@@ -269,24 +283,32 @@ main {
 
 .social-outer ul li {
     float: left;
-    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        width: 168px;
-    }
-
     @media print {
         width: unset;
+    }
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        width: 32px;
     }
 }
 
 .social-icon i {
     font-family: "FontAwesome";
-    font-size: 10pt;
-    padding: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size:10pt;
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        font-size:14pt;
+     
+    }
 }
 
 .social-icon span {
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        display: none;
+    }
     font-size: 10pt;
     font-weight: 400;
+    letter-spacing: 0.04em;
     color: black;
 }
 
@@ -303,10 +325,11 @@ main {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         width: 90%;
     }
-    
+    width: 95%;
     text-align: center;
     font-weight: 300;
     font-style: italic;
+    font-size: 10pt;
     color: black;
 }
 
@@ -314,7 +337,7 @@ main {
     border-top: 1px solid #f2f2f2;
 }
 
-h1 {
+h1, k2, h3, h4, h5 {
     font-size: 20pt;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -352,6 +375,7 @@ h1::first-letter {
     }
 
     font-weight: 700;
+    font-size: 10pt;
     float: left;
     width:200px;
     border-bottom: 1px solid rgba(242, 242, 242, 0.50);
@@ -367,6 +391,7 @@ h1::first-letter {
     }
 
     font-weight: 700;
+    font-size: 10pt;
     float: left;
     width:200px;
 }
@@ -376,11 +401,14 @@ h1::first-letter {
     border-bottom: 1px solid rgba(242, 242, 242, 0.50);
     border-radius: 0;
     text-align: right;
+    font-size: 10pt;
+
 }
 
 .expertise-skills-last {
     text-align: right;
     width: 100%;
+    font-size: 10pt;
 }
 
 .job-outer {
@@ -424,7 +452,7 @@ h1::first-letter {
 .job-title {
     color: black;
     font-weight: 400;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     width: 60%;
     float: left;
@@ -442,7 +470,7 @@ h1::first-letter {
     font-style: normal;
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
 }
 
 
@@ -473,5 +501,4 @@ h1::first-letter {
     color: black;
     font-weight: 400;
     font-style: normal;
-
 }

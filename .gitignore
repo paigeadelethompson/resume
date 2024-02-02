@@ -3,4 +3,6 @@ public
 .hugo_build.lock
 resources/
 static/dl/cv.pdf
+static/dl/cv.docx
 public
+*__pycache__/*
