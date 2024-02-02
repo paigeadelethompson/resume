@@ -39,7 +39,7 @@ jobs:
       - name: Install Dart Sass Embedded
         run: sudo snap install dart-sass-embedded
       - name: Chromium/Python
-        run: sudo apt -y update ; sudo apt -y install chromium-browser python3.11 python3-pip 
+        run: sudo apt -y update ; sudo apt -y install chromium-browser python3.11 python3-pip python3-toml
       - name: install Selenium
         run: sudo pip3 install selenium python-docx toml
       - name: Checkout
