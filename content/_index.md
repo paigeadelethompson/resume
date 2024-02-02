@@ -76,12 +76,12 @@ interface with the non-technical world.
     [[page.history]]
     company_name = "Upwork"
     start_date = "Jun 2023"
-    end_date = ""
+    end_date = "Jun 2023"
     location = "Virtual"
     job_title = "Freelance Software / Systems Engineer"
     duties = [
     '''
-    IAmPaigeAT / https://www.upwork.com/freelancers/~011c709e6eddbc331f?viewMode=1
+    Developing solutions with OpenVPN, FRR, and Ansible
     '''
     ]
     
@@ -239,20 +239,16 @@ interface with the non-technical world.
     [[page.certifications]]
     remove_border = true
     certification_name = "Hurricane Electric IPv6"
-    title = "Sage Level"
+    title = "Sage"
     start_date = "2022"
     end_date = "2022"
     location = "Virtual"
-    details = [
-    '''
-    Comprehensive knowledge of CIDR Notation, Link-Local/ULA/GUA scopes, 6in4
-    tunnels, HTTP, SMTP and DNS.
-    ''']
+    details = []
 
     [[page.presentations]]
     remove_border = true
     presentation_name = "NFTables 1.x"
-    title = "Intro to NFTables 1.x and comparision to IPTables/BSD PF"
+    title = "Intro to NFTables 1.x"
     start_date = "2022"
     end_date = "2022"
     location = "Virtual"
@@ -271,8 +267,7 @@ interface with the non-technical world.
     details = [
     '''
     Left prior to completing my degree to focus on work at Seattle Software
-    Systems which included projects for Wintech Racing and the ConnectU
-    platform.
+    Systems.
     ''']
 
     [[page.activities]]
@@ -284,7 +279,7 @@ interface with the non-technical world.
     end_date = "2019"
     details = [
     '''
-    Offered DNS, e-mail, website, shell acounts, and game server hosting as well
+    Provided DNS, e-mail, website, shell acounts, and game server hosting as well
     as static IPv4 and IPv6 tunnels.
     ''',
 
@@ -293,13 +288,7 @@ interface with the non-technical world.
     ''',
 
     '''
-    Developed several MVC web application development frameworks for Netcrave's
-    specific projects and those of it's clients.
-    ''',
-
-    '''
-    Performed packet capture analyses and filed a number abuse reports with ISPs
-    for confirmed denial of service attacks.
+    Developed several MVC web application development frameworks.
     ''',
 
     '''
