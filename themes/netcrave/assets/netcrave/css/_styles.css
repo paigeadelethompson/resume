@@ -7,8 +7,8 @@
     -webkit-text-size-adjust: 100%;
     border: 0;
     font-family: 'Inter';
-    font-size: 10pt;
-    letter-spacing: 0.03em;
+    font-size: 11pt;
+    letter-spacing: 0.01em;
     color: black;
     font-style: normal;
     font-weight: 300;
@@ -51,15 +51,16 @@
     @media print {
         display: none;
     }
+    
 }
 
 .toolstrip i {
-   
+    font-weight: 0;
     font-size: 16pt;
     margin-right: 8px;
     color: black;
-    font-weight: normal;
     cursor: pointer;
+
     @media print {
         display: none;
     }
@@ -217,6 +218,7 @@ main {
 .title {
     text-transform: uppercase;
     font-weight: 400;
+    letter-spacing: 0.04em;
     color: black;
 }
 
@@ -229,9 +231,12 @@ main {
 
 .location {
     font-weight: 400;
-    font-size: 10pt;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     color: black;
+}
+
+.residence {
+    letter-spacing: 0.08em;
     font-style: oblique;
 }
 
@@ -254,10 +259,7 @@ main {
 }
 
 .social-outer ul {
-    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        width: 35%;
-    }
-
+   
     @media print {
         width: unset;
         margin-left: unset;
@@ -269,24 +271,32 @@ main {
 
 .social-outer ul li {
     float: left;
-    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        width: 168px;
-    }
-
     @media print {
         width: unset;
+    }
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        width: 32px;
     }
 }
 
 .social-icon i {
     font-family: "FontAwesome";
-    font-size: 10pt;
-    padding: 4px;
+    font-size: 11pt;
+    margin-left: 2px;
+    margin-right: 2px;
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        font-size:14pt;
+     
+    }
 }
 
 .social-icon span {
-    font-size: 10pt;
+    @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        display: none;
+    }
+    font-size: 9pt;
     font-weight: 400;
+    letter-spacing: 0.04em;
     color: black;
 }
 
@@ -303,10 +313,11 @@ main {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         width: 90%;
     }
-    
+    width: 95%;
     text-align: center;
     font-weight: 300;
     font-style: italic;
+    font-size: 10pt;
     color: black;
 }
 
@@ -314,7 +325,7 @@ main {
     border-top: 1px solid #f2f2f2;
 }
 
-h1 {
+h1, k2, h3, h4, h5 {
     font-size: 20pt;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -424,7 +435,7 @@ h1::first-letter {
 .job-title {
     color: black;
     font-weight: 400;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     width: 60%;
     float: left;
@@ -442,7 +453,7 @@ h1::first-letter {
     font-style: normal;
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
 }
 
 
@@ -473,5 +484,4 @@ h1::first-letter {
     color: black;
     font-weight: 400;
     font-style: normal;
-
 }
