@@ -317,9 +317,9 @@ main {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         width: 90%;
     }
-    width: 85%;
+    width: 90%;
     text-align: center;
-    font-weight: 300;
+    font-weight: 200;
     font-style: italic;
     font-size: 10pt;
     color: black;
@@ -366,7 +366,7 @@ h1::first-letter {
         width: 200px;
     }
 
-    font-weight: 700;
+    font-weight: 600;
     font-size: 11pt;
     float: left;
     width:200px;
@@ -382,7 +382,7 @@ h1::first-letter {
         width: 200px;
     }
 
-    font-weight: 700;
+    font-weight: 600;
     font-size: 11pt;
     float: left;
     width:200px;
@@ -426,7 +426,7 @@ h1::first-letter {
 }
 
 .job-company {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 11pt;
     width: 60%;
     float:left;
