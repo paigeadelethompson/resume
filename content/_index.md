@@ -272,7 +272,7 @@ with the non-technical world.
     Conducted independent security research to better understand the nature of security 
     problems on the modern internet; distributed denial of service attacks, weaknessess
     in the use of mature software, cryptography scalability and adoption, and the
-    psychology of both threat actors and systems/software engingeers. 
+    psychology of both threat actors and systems/software engineers. 
     ''']
 
 +++
