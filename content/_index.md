@@ -19,8 +19,8 @@ around other professional systems administrators, software engineers, and
 security researchers. I share the same undying passion for better software
 and technology with many of my professional colleagues and friends. I have
 sought to establish a strong, security-minded skill set throughout my career
-as well as a vital appreciation for productive technology that must
-interface with the non-technical world.
+as well as a vital appreciation for productive technology that interfaces 
+with the non-technical world.
 '''
 
 [[page]]
@@ -33,8 +33,7 @@ interface with the non-technical world.
     [[page.expertise]]
     category = "Operating Systems"
     skills = '''
-    Windows Server(2k, 3, 8, 16) Linux(SuSE/Kubic/Gentoo/Debian and advanced
-    Linux kernel concepts), FreeBSD, OpenBSD
+    Windows Server(2k, 3, 8, 16) Linux(SuSE/Kubic/Gentoo/Debian), FreeBSD, OpenBSD
     '''
 
     [[page.expertise]]
@@ -124,9 +123,6 @@ interface with the non-technical world.
     Collaborated with the website team on resolving their backlog items;
     Javascript errors that occur in specific views and not others, CSS
     bugs, and minimizing false positives in the logging framework.
-    ''',
-    '''
-    Left the company to stay for a long term period in Greece with family.
     ''']
 
     [[page.history]]
@@ -137,21 +133,16 @@ interface with the non-technical world.
     end_date = "Jun 2013"
     duties = [
     '''
-    Built server deployment and configuration automation with Opscode Chef on
+    Built systems deployment and configuration automation with Opscode Chef on
     Rackspace infrastructure; this entire stack included HAProxy, nginx,
     PHP-fpm, Percona XtraDB cluster, Couchbase, OSSEC, munin, and nagios.
     ''',
     '''
     Developed custom Iptables and ISC Bind 9 chef cookbooks. The iptables
     cookbook used chef-client registration information together with role-based
-    attributes to determine specific egress and ingress rules on both the
+    attributes to determine specific egress/ingress rules on both the
     internal and external network planes without a need for one-off firewall
     rules to be specified.
-    ''',
-    '''
-    Assisted in planning a scheduled launch for a beta release with my team and
-    the service was made available to several clients for trial in December
-    2012.
     ''']
 
 [[page]]
@@ -174,8 +165,7 @@ interface with the non-technical world.
     end_date = "Jan 2011"
     duties = [
     '''
-    Developed on Wordpress, drupal, Joomla, and custom PHP/MySQL/Javascript
-    websites for Mr. Branning and his clients.
+    Developed on Wordpress, drupal, Joomla, and custom PHP/MySQL/Javascript websites.
     ''']
 
     [[page.history]]
@@ -201,19 +191,14 @@ interface with the non-technical world.
     '''
     Managed Active Directory, Exchange Server 2007, Google Apps for Education /
     non-profits, accounting software, networking, and security for roughly 100
-    users; the entire K-6 school including faculty and students.
+    users; the entire K-6 school including faculty and students. This included 
+    backups, updates, audits, and adding capacity when necesarry. 
     ''',
-
     '''
-    Contributed my own hardware with no strings attached for the purpose of
-    getting things done the right way in a low budget environment.
-    ''',
-
-    '''
-    Provided help desk and computer repair for all school computers (many
-    rebuilds) running Windows XP with Office, student software, and managed in
-    active directory with several different OUs and varying group policy
-    configurations.
+    Provided help desk and computer repair for all school computers; often included 
+    fresh installations of Windows XP with Office, student software, all were managed in
+    active directory which consisted of several organizational units and subsequent 
+    group policy configurations.
     ''']
 
     [[page.history]]
@@ -226,14 +211,14 @@ interface with the non-technical world.
     duties = [
     '''
     Developed an inventory management front-end application for PalmOS 4.x in
-    Metrowerks CodeWarrior which ran on Symbol SPT 1846 PalmOS-based PDAs. The
+    Metrowerks CodeWarrior for Symbol SPT 1846 PalmOS-based PDAs. The
     application could scan labels for products anywhere with WiFi access around
     a warehouse and allows for remote management of inventory.
     ''',
 
     '''
-    Developed in Java, PHP, HTML, CSS, and JavaScript for Mr Williams and his
-    clients.
+    Developed websites and applications using Java, PHP, HTML, CSS, and 
+    JavaScript.
     ''']
 
     [[page.certifications]]
@@ -264,11 +249,7 @@ interface with the non-technical world.
     location = "Bellevue, WA"
     start_date = "2005"
     end_date = "2005"
-    details = [
-    '''
-    Left prior to completing my degree to focus on work at Seattle Software
-    Systems.
-    ''']
+    details = []
 
     [[page.activities]]
     remove_border = true
@@ -284,16 +265,14 @@ interface with the non-technical world.
     ''',
 
     '''
-    VPN, active network monitoring, and denial of service protection services.
+    Virtual private network access with active network monitoring services and denial 
+    of service protection.
     ''',
-
     '''
-    Developed several MVC web application development frameworks.
-    ''',
-
-    '''
-    Participated in independent security research to better understand the
-    nature of security problems on the modern internet.
+    Conducted independent security research to better understand the nature of security 
+    problems on the modern internet; distributed denial of service attacks, weaknessess
+    in the use of mature software, cryptography scalability and adoption, and the
+    psychology of both threat actors and systems/software engingeers. 
     ''']
 
 +++
