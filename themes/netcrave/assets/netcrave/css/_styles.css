@@ -481,8 +481,8 @@ h1::first-letter {
     display: flex;
 
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        margin-left: 8px;
-        width: 95%;
+        /*margin-left: 8px;
+        width: 95%;*/
         
     }
 
@@ -497,7 +497,7 @@ h1::first-letter {
     margin-top: 2px;
 
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        margin-left: 8px;
+        /*margin-left: 8px;*/
     }
 }
 
