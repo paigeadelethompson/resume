@@ -41,6 +41,7 @@
 }
 
 .toolstrip {
+    background: none;
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         width: 100%;
         display: flex;
@@ -107,7 +108,8 @@ main {
     overflow: hidden;
     padding-left: 2cm;
     padding-right: 2cm;
-    padding-top: 1cm;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
 
 }
 
@@ -237,7 +239,7 @@ main {
 }
 
 .residence {
-    letter-spacing: 0.16em;
+    letter-spacing: 0.12em;
     font-style: oblique;
     font-size: 10pt;
 }
@@ -288,7 +290,7 @@ main {
     font-family: "FontAwesome";
     margin-left: 2px;
     margin-right: 2px;
-    font-size:10pt;
+    font-size:11pt;
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         font-size:14pt;
      
@@ -299,7 +301,7 @@ main {
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         display: none;
     }
-    font-size: 10pt;
+    font-size: 11pt;
     font-weight: 400;
     letter-spacing: 0.04em;
     color: black;
@@ -322,7 +324,7 @@ main {
     text-align: center;
     font-weight: 300;
     font-style: italic;
-    font-size: 10pt;
+    font-size: 11pt;
     color: black;
 }
 
@@ -331,7 +333,7 @@ main {
 }
 
 h1, k2, h3, h4, h5 {
-    font-size: 20pt;
+    font-size: 14pt;
     margin-top: 2px;
     margin-bottom: 2px;
     font-weight: bold;
@@ -368,7 +370,7 @@ h1::first-letter {
     }
 
     font-weight: 700;
-    font-size: 10pt;
+    font-size: 11pt;
     float: left;
     width:200px;
     border-bottom: 1px solid rgba(242, 242, 242, 0.50);
@@ -384,7 +386,7 @@ h1::first-letter {
     }
 
     font-weight: 700;
-    font-size: 10pt;
+    font-size: 11pt;
     float: left;
     width:200px;
 }
@@ -394,14 +396,14 @@ h1::first-letter {
     border-bottom: 1px solid rgba(242, 242, 242, 0.50);
     border-radius: 0;
     text-align: right;
-    font-size: 10pt;
+    font-size: 11pt;
 
 }
 
 .expertise-skills-last {
     text-align: right;
     width: 100%;
-    font-size: 10pt;
+    font-size: 11pt;
 }
 
 .job-outer {
@@ -428,7 +430,7 @@ h1::first-letter {
 
 .job-company {
     font-weight: 700;
-    font-size: 12pt;
+    font-size: 11pt;
     width: 60%;
     float:left;
 }
@@ -450,7 +452,7 @@ h1::first-letter {
     text-transform: uppercase;
     width: 60%;
     float: left;
-    font-size: 10pt;
+    font-size: 11pt;
 }
 
 .job-date-outer {
@@ -462,7 +464,7 @@ h1::first-letter {
 
 
 .job-date-outer time {
-    font-size: 10pt;
+    font-size: 11pt;
     font-style: normal;
     text-transform: uppercase;
     font-weight: 400;
@@ -481,6 +483,7 @@ h1::first-letter {
 
     ul { 
         margin-top: 4px;
+        list-style: none;
     }
 }
 
@@ -495,6 +498,6 @@ h1::first-letter {
 
 .job-duties ul li::first-letter {
     color: black;
-    font-weight: 400;
+    font-weight: 420;
     font-style: normal;
 }
