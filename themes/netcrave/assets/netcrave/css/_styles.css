@@ -310,7 +310,7 @@ main {
 }
 
 .quote {
-    border-top: 1px solid rgba(242, 242, 242, 0.50);
+    border-top: 1px solid 1px solid rgba(242, 242, 242, 0.34);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -329,7 +329,8 @@ main {
 }
 
 .heading {
-    border-top: 1px solid #f2f2f2;
+    border-top: 1px solid 1px solid rgba(242, 242, 242, 0.34);
+    
 }
 
 h1, k2, h3, h4, h5 {
@@ -373,7 +374,7 @@ h1::first-letter {
     font-size: 11pt;
     float: left;
     width:200px;
-    border-bottom: 1px solid rgba(242, 242, 242, 0.50);
+    border-bottom: 1px solid 1px solid rgba(242, 242, 242, 0.34);
 }
 
 .expertise-category-last {
@@ -393,7 +394,7 @@ h1::first-letter {
 
 .expertise-skills {
     width: 100%;
-    border-bottom: 1px solid rgba(242, 242, 242, 0.50);
+    border-bottom: 1px solid 1px solid rgba(242, 242, 242, 0.34);
     border-radius: 0;
     text-align: right;
     font-size: 11pt;
@@ -421,7 +422,7 @@ h1::first-letter {
 .job-row {
     margin-bottom: 4px;
     width: 100%;
-    border-bottom: 1px solid rgba(242, 242, 242, 0.50);
+     border-bottom: 1px solid 1px solid rgba(242, 242, 242, 0.34);
 }
 
 .job-row-last {
