@@ -296,7 +296,7 @@ main {
     font-family: "FontAwesome";
     margin-left: 2px;
     margin-right: 2px;
-    font-size:11pt;
+    font-size:16pt;
     @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
         font-size:16pt;
      
