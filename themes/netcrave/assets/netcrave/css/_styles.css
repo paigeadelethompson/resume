@@ -108,7 +108,7 @@ main {
     padding-left: 2cm;
     padding-right: 2cm;
     padding-top: 2cm;
-    padding-bottom: 2cm;
+    /* see body continued (bug, padding to: padding-bottom: 2cm; */ 
 
 }
 
@@ -125,6 +125,9 @@ main {
 }
 
 .body-continued {
+    @media print {
+        padding-top: 2cm;
+    }
     page-break-before: always;
 }
 
